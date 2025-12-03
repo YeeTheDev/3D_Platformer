@@ -19,6 +19,12 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         moveDirection = new Vector3(Input.GetAxisRaw("Horizontal"), 0f, Input.GetAxisRaw("Vertical"));
+
+        if (Input.GetButtonDown("Jump"))
+        {
+            moveDirection.y = jumpHeight;
+        }
+
         transform.position = transform.position + moveDirection * Time.deltaTime * moveSpeed;
     }
 }
