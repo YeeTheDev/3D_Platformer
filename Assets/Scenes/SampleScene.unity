@@ -152,8 +152,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9251cc8fbb7d648fe9d36b8414e89ded, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
-  jumpHeight: 5
+  moveSpeed: 2.5
+  jumpHeight: 10
+  gravityScale: 5
+  characterController: {fileID: 37456444}
 --- !u!4 &37456443
 Transform:
   m_ObjectHideFlags: 0
@@ -189,13 +191,13 @@ CharacterController:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Height: 2
-  m_Radius: 0.5
+  m_Height: 1
+  m_Radius: 0.29
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!1 &136263402
 GameObject:
   m_ObjectHideFlags: 0
