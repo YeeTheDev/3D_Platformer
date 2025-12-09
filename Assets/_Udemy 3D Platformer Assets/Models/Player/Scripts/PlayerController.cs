@@ -5,17 +5,19 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed;
-    public float jumpHeight;
+    public float jumpForce;
     public float gravityScale = 5f;
 
     private Vector3 moveDirection;
 
-    public CharacterController characterController;
+    public CharacterController charController;
+
+    private Camera theCam;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        theCam = Camera.main;
     }
 
     // Update is called once per frame
@@ -28,13 +30,18 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetButtonDown("Jump"))
         {
-            moveDirection.y = jumpHeight;
+            moveDirection.y = jumpForce;
         }
 
         moveDirection.y += Physics.gravity.y * Time.deltaTime * gravityScale;
 
         //transform.position = transform.position + moveDirection * Time.deltaTime * moveSpeed;
 
-        characterController.Move(moveDirection * Time.deltaTime);
+        charController.Move(moveDirection * Time.deltaTime);
+
+        if (Input.GetAxisRaw("Horizontal") != 0 || Input.GetAxisRaw("Vertical") != 0)
+        {
+            transform.rotation = Quaternion.Euler(0f, theCam.transform.rotation.eulerAngles.y, 0f);
+        }
     }
 }
