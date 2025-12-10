@@ -20,7 +20,7 @@ public class KillPlayer : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-
+            GameManager.Instance.Respawn();
         }
     }
 }
