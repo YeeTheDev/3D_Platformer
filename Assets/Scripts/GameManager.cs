@@ -52,4 +52,9 @@ public class GameManager : MonoBehaviour
 
         PlayerController.Instance.gameObject.SetActive(true);
     }
+
+    public void SetSpawnPoint(Vector3 newSpawnPoint)
+    {
+        respawnPosition = newSpawnPoint;
+    }
 }
