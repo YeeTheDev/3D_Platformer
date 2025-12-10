@@ -78,8 +78,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9251cc8fbb7d648fe9d36b8414e89ded, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2.5
-  jumpForce: 10
+  moveSpeed: 5
+  jumpForce: 15
   gravityScale: 5
   charController: {fileID: 6587955951215527690}
   playerModel: {fileID: 3138103297613573213}

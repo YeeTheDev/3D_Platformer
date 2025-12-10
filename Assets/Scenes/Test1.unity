@@ -545,6 +545,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level Nest
       objectReference: {fileID: 0}
+    - target: {fileID: 6459620896030004552, guid: 14e82e694268f4f179872d5b9c0aa442, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6459620896030004552, guid: 14e82e694268f4f179872d5b9c0aa442, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
