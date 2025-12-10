@@ -153,11 +153,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2.5
-  jumpForce: 0
+  jumpForce: 10
   gravityScale: 5
   charController: {fileID: 37456444}
   playerModel: {fileID: 74325765}
   rotateSpeed: 5
+  anim: {fileID: 2067649711}
 --- !u!4 &37456443
 Transform:
   m_ObjectHideFlags: 0
@@ -172,6 +173,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2067649710}
+  - {fileID: 2036550220}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!143 &37456444
@@ -382,7 +384,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330054432}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.51132494, y: 0, z: 0, w: 0.8593875}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -952,7 +954,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5422046, y: 0, z: 0, w: 0.8402465}
-  m_LocalPosition: {x: 0.0034251623, y: 4.471102, z: -1.7522494}
+  m_LocalPosition: {x: 0, y: 4.5109997, z: -1.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1442,8 +1444,8 @@ MonoBehaviour:
   m_StreamingVersion: 20170927
   m_Priority: 274
   m_StandbyUpdate: 2
-  m_LookAt: {fileID: 2060925574}
-  m_Follow: {fileID: 2060925574}
+  m_LookAt: {fileID: 2036550220}
+  m_Follow: {fileID: 2036550220}
   m_CommonLens: 1
   m_Lens:
     FieldOfView: 40
@@ -1538,7 +1540,7 @@ Transform:
   m_GameObject: {fileID: 1790654098}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0034251623, y: 4.471102, z: -1.7522494}
+  m_LocalPosition: {x: 0, y: 4.5109997, z: -1.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1911,11 +1913,37 @@ Transform:
   - {fileID: 1863362445}
   m_Father: {fileID: 963194228}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &2060925574 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1709380862768029914, guid: 73372dc632d43aa4eb43610c78ce94b5, type: 3}
-  m_PrefabInstance: {fileID: 2067649706}
+--- !u!1 &2036550219
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2036550220}
+  m_Layer: 0
+  m_Name: Cam Target
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2036550220
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036550219}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.641, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 37456443}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2067649706
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1928,6 +1956,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: R0BB13
       objectReference: {fileID: 0}
+    - target: {fileID: 7362118178942883601, guid: 73372dc632d43aa4eb43610c78ce94b5, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: da376fa1bbd4e451ab29343d8eda6f1e, type: 2}
     - target: {fileID: 8204456022665551295, guid: 73372dc632d43aa4eb43610c78ce94b5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1976,6 +2008,11 @@ PrefabInstance:
 --- !u!4 &2067649710 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8204456022665551295, guid: 73372dc632d43aa4eb43610c78ce94b5, type: 3}
+  m_PrefabInstance: {fileID: 2067649706}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2067649711 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7362118178942883601, guid: 73372dc632d43aa4eb43610c78ce94b5, type: 3}
   m_PrefabInstance: {fileID: 2067649706}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2123440887
