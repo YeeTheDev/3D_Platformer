@@ -23,6 +23,19 @@ public class CheckPoint : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             GameManager.Instance.SetSpawnPoint(transform.position);
+
+
+
+            CheckPoint[] allCP = FindObjectsOfType<CheckPoint>();
+            for (int i = 0; i < allCP.Length; i++)
+            {
+                if (allCP[i] != this)
+                {
+                    allCP[i].cpOn.SetActive(false);
+                    allCP[i].cpOff.SetActive(true);
+                }
+            }
+
             cpOff.SetActive(false);
             cpOn.SetActive(true);
         }
