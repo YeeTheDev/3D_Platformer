@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1736302195361643693}
   - component: {fileID: 8618237359878295159}
+  - component: {fileID: 2824732975093074979}
   m_Layer: 0
   m_Name: Systems Manager
   m_TagString: Untagged
@@ -44,3 +45,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ebdba1b3412f456eb0bc717ac174883, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2824732975093074979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7166823970492892829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b68844fbe4d1b4cc2bc97fa4e122d552, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 5
+  maxHealth: 5
