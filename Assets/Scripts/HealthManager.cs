@@ -75,4 +75,13 @@ public class HealthManager : MonoBehaviour
     }
 
     public void ResetHealth() => currentHealth = maxHealth;
+
+    public void AddHealth(int amountToHeal)
+    {
+        currentHealth += amountToHeal;
+        if (currentHealth > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
+    }
 }

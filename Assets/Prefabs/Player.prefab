@@ -88,6 +88,10 @@ MonoBehaviour:
   isKnocking: 0
   knockBackLength: 0.5
   knockBackPower: {x: 3, y: 8}
+  playerPieces:
+  - {fileID: 2785534335280983268}
+  - {fileID: 2981516653344121766}
+  - {fileID: 4367216801124356138}
 --- !u!143 &6587955951215527690
 CharacterController:
   m_ObjectHideFlags: 0
@@ -185,8 +189,23 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 7362118178942883601, guid: 73372dc632d43aa4eb43610c78ce94b5, type: 3}
   m_PrefabInstance: {fileID: 8437785264604613070}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2785534335280983268 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6030667647905637674, guid: 73372dc632d43aa4eb43610c78ce94b5, type: 3}
+  m_PrefabInstance: {fileID: 8437785264604613070}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2981516653344121766 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6663481812439034472, guid: 73372dc632d43aa4eb43610c78ce94b5, type: 3}
+  m_PrefabInstance: {fileID: 8437785264604613070}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &3138103297613573213 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6815565458368210323, guid: 73372dc632d43aa4eb43610c78ce94b5, type: 3}
+  m_PrefabInstance: {fileID: 8437785264604613070}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4367216801124356138 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5296919759083411940, guid: 73372dc632d43aa4eb43610c78ce94b5, type: 3}
   m_PrefabInstance: {fileID: 8437785264604613070}
   m_PrefabAsset: {fileID: 0}
