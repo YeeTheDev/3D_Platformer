@@ -35,6 +35,10 @@ public class HealthManager : MonoBehaviour
             currentHealth = 0;
             GameManager.Instance.Respawn();
         }
+        else
+        {
+            PlayerController.Instance.KnockBack();
+        }
     }
 
     public void ResetHealth() => currentHealth = maxHealth;

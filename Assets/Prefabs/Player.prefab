@@ -85,6 +85,9 @@ MonoBehaviour:
   playerModel: {fileID: 3138103297613573213}
   rotateSpeed: 5
   anim: {fileID: 1383299446147555039}
+  isKnocking: 0
+  knockBackLength: 0.5
+  knockBackPower: {x: 3, y: 8}
 --- !u!143 &6587955951215527690
 CharacterController:
   m_ObjectHideFlags: 0
